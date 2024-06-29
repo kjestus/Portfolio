@@ -6,18 +6,37 @@
       align-items: center;
       justify-content: left;
     }
+    div.scroll-container {
+      background-color: #000000;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
+
+    div.scroll-container img {
+      padding: 10px;
+    }
     .BigBody{
       width: 80%;
       position: absolute;
       left: 15%;
       font-size: 25px;
+      font-family: "Verdana",sans-serif;
     }
-      h1{color:#2D4356;
-        text-align: center;
-        font-size: 80px;
-        padding-top: 30px;
+    h1{color:#FFFFFF;
+      background-color: #000000;
+      text-align: center;
+      font-size: 80px;
+      width:100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-family: "Arial",sans-serif;
+    }
+      h2{color:#44000D;
+        font-family: "Verdana",sans-serif;
+        font-size: 25px;
       }
-body{background-color: #FFF2D7;}      
+body{background-color: #FFFFFF;}
     </style>
   </head>
 
@@ -27,14 +46,14 @@ body{background-color: #FFF2D7;}
     <div class="ArtCard">
       <img src="Church_App.png" style="width:40%;"/>
     </div>
-    <p> Project details: While volunteering at my church, I had the opportunity to collaborate with the Confirmation program director on the development of a mobile application.
+    <p> <h2>Project details</h2>While volunteering at my church, I had the opportunity to collaborate with the Confirmation program director on the development of a mobile application.
       This app serves as a companion guide for children participating in the 30-day Marian Consecration program.
       The app's core functionalities include user age group tracking, daily progress monitoring, and seamless integration with the church's pre-recorded YouTube videos.
     </p>
     <p> </p>
     <br>
     <br>
-    <p> Design Challenges & Solutions: A key challenge in designing this app was catering to a diverse user base – young children and pre-teens.
+    <p> <h2>Design Challenges & Solutions</h2>A key challenge in designing this app was catering to a diverse user base – young children and pre-teens.
       To address this, I opted for a visually engaging approach that utilizes light pastel color palettes and incorporates imagery centered around the Virgin Mary.
       This balances the appeal of a colorful design with the app's religious context.
     </p>
@@ -44,42 +63,21 @@ body{background-color: #FFF2D7;}
     <p> </p>
     <br>
     <br>
-    <p> Metrics & Future Considerations: Currently, the app is deployed through Firebase, allowing for basic user tracking and metric testing.
+    <p> <h2>Metrics & Future Considerations</h2> Currently, the app is deployed through Firebase, allowing for basic user tracking and metric testing.
       Due to its limited availability within the church community, user data is minimal at this stage.
       However, I anticipate a significant increase in user acquisition once the app is published on the App Store and Google Play.
       This broader reach will provide valuable user engagement data that can be utilized to optimize the app's features and functionality in future iterations.
     </p>
     <div class="ArtCard">
-      <img src="Church_Landing.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Menu.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Group.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Day.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Video.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_About.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Settings.png" style="width:20%;"/>
-    </div>
-    <br>
-    <div class="ArtCard">
-      <img src="Church_Spanish.png" style="width:20%;"/>
-    </div>
+      <div class="scroll-container">
+          <img src="Church_Landing.png" alt="Landing Page">
+          <img src="Church_Menu.png" alt="Menu Page">
+          <img src="Church_Day.png" alt="Day Selection Page">
+          <img src="Church_Video.png" alt="Linked Video">
+          <img src="Church_About.png" alt="About Page">
+          <img src="Church_Settings.png" alt="Settings Page">
+          <img src="Church_Spanish.png" alt="Spanish Version">
+        </div>
   </div>
 </body>
 </html>
