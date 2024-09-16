@@ -88,11 +88,11 @@ div.scroll-container img {
     }
     /* Caption text */
     .text {
-     color: #969592;
+     color: #000000;
      font-size: 18px;
      padding: 8px 12px;
      position: absolute;
-     bottom: 8px;
+     bottom: 16px;
      width: 100%;
      text-align: center;
     }
@@ -137,31 +137,36 @@ div.scroll-container img {
   <div class="BigBody">
     <h2> Arty The Weather Hog</h2>
     <div class="ArtCard">
-      <img src="Weather_Icon.png" style="width:40%;"/>
+      <img src="./Weather_Icon.png"alt ="image in same dir as index.html" style="width:40%;"/>
     </div>
-    <p> <h2>Project details</h2>For my Graphic Design II class, I was tasked with creating a mobile application concept.
-      I chose to develop a user-friendly and educational weather app targeted towards children. My personal fascination with weather, which began in third grade,
-      fueled my desire to create a resource that could ignite a similar passion in young learners.</p>
+    <p> <h2>Project details</h2>For my Graphic Design class, I was tasked with creating an app concept either travel, weather, or fitness.
+      My personal fascination with weather is the reason why I choose to create a weather app.
+      Thinking through the concepts of different weather apps, I knew a few things;
+      1) I didnt want to create just another general weather app,
+      2) I wanted my app to be educational and geared for children
+      3) I wanted to use a groundhog for the mascot.
+      With these concepts in mind I set out the create Arty The Weather Hog. An educational weather app inspired by groundhog's day.
+    </p>
     <p> </p>
     <br>
     <br>
-    <p> <h2>Goals/Vision</h2> The core objective of "Arty the Weather Hog" is to provide an engaging platform for children to explore weather phenomena and natural disasters.
-      Grounded in the concept of Groundhog Day, the app features Arty, a charismatic groundhog character, who introduces young users to a variety of weather concepts.
+    <p> <h2>Goals/Vision</h2> My biggest goal was to make Arty easy for children to use. I did this by using child friendly language,
+      having Arty guide the children throughout the app, and making it engaging for children, so they'll want to come back. I utilized child friendly graphics,
+      and a gender nueatral color pallete as, to make the app more appealing to all genders.
+
     </p>
     <div class="ArtCard">
       <img src="Weather_Moodboard.png" style="width:60%;"/>
     </div>
     <p> </p>
-    <p> <h2>App Functionality</h2>"Arty the Weather Hog" offers a three-pronged approach to weather education:
-      Local Weather & Radar: Children can access real-time weather information for their location, including the ability to view and interpret weather radar imagery.
-      Interactive Learning Modules: Arty guides users through engaging modules explaining different types of severe storms and natural disasters.
-      Customization & User Engagement: The app allows for a degree of personalization, catering to children's individual interests within the realm of weather.
+    <p> <h2>App Functionality</h2>"Arty the Weather Hog" is meant to function the same as a noraml weather app, but with a bit more reasources to help foster the children's curiosity.
+          They can look up daily weather for their location, learn to read weather radar, explore diffrent weather phenomenon, learn cool facts about weather,
+          and set up weather alarts. All these functions are meant to be engaging for children, so they'll want to share their new found knowledge.
       <p>
     <br>
     <br>
-    <p> <h2>Metrics &  Future Development</h2> In a real-world scenario, "Arty the Weather Hog" would leverage user tracking to identify the most engaging content sections.
-      This data could inform future updates and content additions, ensuring the app remains dynamic and aligns with the interests of its young audience.
-      By analyzing user engagement, I could refine the app's design elements and content to maximize its educational impact.
+    <p> <h2>Metrics &  Future Development</h2> In a real-world scenario, "Arty the Weather Hog" would utilize user tracking to identify the most engaging content sections.
+      This way I can gear updates, and future concent to what's most popular.
     </p>
     <div class=ArtCard>
       <div class="slideshow-container">
@@ -192,15 +197,15 @@ div.scroll-container img {
                         </div>
                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      <br>
+                      <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                          <span class="dot" onclick="currentSlide(4)"></span>
+                          <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
                   </div>
-                  <br>
-                  <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span>
-                      <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>
-                      <span class="dot" onclick="currentSlide(5)"></span>
-                    </div>
                     <script>
                     let slideIndex = 1;
                     showSlides(slideIndex);
