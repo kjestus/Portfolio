@@ -81,7 +81,37 @@
     a:hover, a:active {
       background-color: #750E21;
     }
+    .Overlay_Container {
+      position: relative;
+    }
 
+    .Overlay_Image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .Overlay_Middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .Overlay_Container:hover .Overlay_Image {
+      opacity: 0.3;
+    }
+
+    .Overlay_Container:hover .Overlay_Middle {
+      opacity: 1;
+    }
     </style>
   </head>
 
@@ -98,9 +128,9 @@
     <div class="ArtCard">
       <img src="weather_app_icon.png" style="width:40%;"/>
       <div class="Read">
-      <p>A weather app concept for children, created for a graphic design project.</p>
+        <p>A weather app concept for children, created for a graphic design project.</p>
         <a href="./Weather.html">Read More</a>
-    </div>
+      </div>
     </div>
     <br>
     <br>
@@ -140,13 +170,32 @@
     <br>
     <div class="row">
       <div class="column">
-        <img src="San_Francisco.jpg" >
-        <img src="Tim_Burton_ Woods.jpg" >
-        <img src="Sudoku coffehouse mockup.png" >
+        <div class="Overlay_Container">
+          <img src="Tim_Burton_ Woods.jpg" class="Overlay_Image" style="width:100%">
+          <div class="Overlay_Middle">
+            <div class="text">Tim Burton; Acrylic on canvas</div>
+          </div>
+        </div>
+        <div class="Overlay_Container">
+          <img src="SunggleByte_Logo.png" class="Overlay_Image" style="width:100%">
+          <div class="Overlay_Middle">
+            <div class="text">Mockup business card</div>
+          </div>
+        </div>
       </div>
       <div class="column">
-        <img src="Moss.jpg" >
-        <img src="SunggleByte_Logo.png" >
+        <div class="Overlay_Container">
+          <img src="San_Francisco.jpg" class="Overlay_Image" style="width:100%">
+          <div class="Overlay_Middle">
+            <div class="text">San Francisco; Acrylic on canvas</div>
+          </div>
+        </div>
+        <div class="Overlay_Container">
+          <img src="Sudoku coffehouse mockup.png" class="Overlay_Image" style="width:100%">
+          <div class="Overlay_Middle">
+            <div class="text">Coffee House Sudoku</div>
+          </div>
+        </div>
       </div>
     </div>
 </body>
